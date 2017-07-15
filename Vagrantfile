@@ -11,8 +11,8 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.ssh.password  = 'vagrant'
   config.ssh.insert_key = 'true'
 
-  config.vm.define :rjzbx do |selenium_oracledb|
-	   rjzbx.vm.network "private_network", ip: "192.168.70.100"
+  config.vm.define :selenium_oracledb do |selenium_oracledb|
+	  selenium_oracledb.vm.network "private_network", ip: "192.168.70.100"
   end
 
   #config.librarian_puppet.puppetfile_dir       = 'puppet'
@@ -24,5 +24,5 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   	#puppet.environment_path = "environments"
   	#puppet.environment 	= "development"
  	#puppet.module_path      = "puppet/modules"
-  end
+  #end
 end
