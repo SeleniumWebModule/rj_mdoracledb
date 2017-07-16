@@ -1,0 +1,6 @@
+#Manage Puppet Module dependencies with librarian-puppet
+
+forge 'http://forge.puppetlabs.com'
+
+mod 'rj-zabbix',
+	:git => "https://github.com/SeleniumWebModule/seleniummdoracledb.git"
