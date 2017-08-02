@@ -11,6 +11,11 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.ssh.password  = 'vagrant'
   config.ssh.insert_key = 'true'
 
+  config.vm.provider :virtualbox do |virtualbox|
+    virtualbox.customize ["modifyvm", :id, "--cpus", "2"]
+    virtualbox.customize ["modifyvm", :id, "--memory", "1396"]
+  end
+
   config.vm.define :selenium_oracledb do |selenium_oracledb|
 	  selenium_oracledb.vm.network "private_network", ip: "192.168.70.100"
   end
