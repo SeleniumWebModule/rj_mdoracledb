@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+#SERÁ GERADO PELO SELENIUM_PROC
+
 VAGRANT_FILE_VERSION = 2
 
 Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
@@ -24,5 +26,16 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   	puppet.environment_path = "environments"
   	puppet.environment 	= "development"
  	  puppet.module_path      = "puppet/modules"
+
+    puppet.facter = {
+      "oracleBaseName"    => "u01",
+      "oracleVersion"     => "11.2.0",
+      "pathName"          => "dbhome_1",
+      "dbname"            => "VTABOL",
+      "systempass"        => "vtax05",
+      "sid"               => "ORCL",
+      "portdb"            => "1521"
+    }
+    
   end
 end
