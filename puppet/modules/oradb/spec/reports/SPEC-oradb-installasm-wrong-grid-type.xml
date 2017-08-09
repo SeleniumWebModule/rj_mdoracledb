@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="oradb::installasm wrong grid type" tests="1" time="0.120765" failures="0" errors="0" skipped="0" timestamp="2017-07-09T20:13:04+02:00">
-  <testcase name="oradb::installasm wrong grid type should raise Puppet::Error with message matching /Unrecognized database grid type, please use CRS_CONFIG|HA_CONFIG|UPGRADE/" time="0.120362">
-  </testcase>
-</testsuite>

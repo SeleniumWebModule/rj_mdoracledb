@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="oradb::database wrong em_configuration" tests="1" time="0.107906" failures="0" errors="0" skipped="0" timestamp="2017-07-09T20:13:03+02:00">
-  <testcase name="oradb::database wrong em_configuration should raise Puppet::Error with message matching /match for Enum/" time="0.107571">
-  </testcase>
-</testsuite>

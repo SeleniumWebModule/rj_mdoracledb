@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="oradb::database wrong action" tests="1" time="0.132823" failures="0" errors="0" skipped="0" timestamp="2017-07-09T20:13:03+02:00">
-  <testcase name="oradb::database wrong action should raise Puppet::Error with message matching /expects a match for Enum/" time="0.13245">
-  </testcase>
-</testsuite>

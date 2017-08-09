@@ -1,4 +1,0 @@
-<%- |  Hash $vars | -%>
-<%- $vars.each |$key, $value| { -%>
-<%= $key %>=<%= $value %>
-<%- } -%>

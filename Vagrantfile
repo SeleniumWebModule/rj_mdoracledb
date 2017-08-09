@@ -28,14 +28,16 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
  	  puppet.module_path      = "puppet/modules"
 
     puppet.facter = {
-      "oracleBaseName"    => "u01",
-      "oracleVersion"     => "11.2.0",
-      "pathName"          => "dbhome_1",
+      "oraclebasename"    => "u01",
+      "oracleversion"     => "11.2.0",
+      "pathname"          => "dbhome_1",
       "dbname"            => "VTABOL",
       "systempass"        => "vtax05",
       "sid"               => "ORCL",
-      "portdb"            => "1521"
+      "portdb"            => "1521",
+      "userdb"            => "VTABOL",
+      "passdb"            => "vtax05"
     }
-    
+
   end
 end

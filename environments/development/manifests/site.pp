@@ -1,11 +1,13 @@
 node default {
 	class {'selenium_md_oracledb':
-	 	oracleBaseName    => $::oracleBaseName,
-		oracleVersion     => $::oracleVersion,
-		pathName          => $::pathName,
+	 	oracleBaseName    => $::oraclebasename,
+		oracleVersion     => $::oracleversion,
+		pathName          => $::pathname,
 		dbname            => $::dbname,
+		portdb            => $::portdb,
 		systempass        => $::systempass,
 		sid               => $::sid,
-		portdb            => $::portdb
+		userdb            => $::userdb,
+		passdb            => $::passdb
 	}
 }

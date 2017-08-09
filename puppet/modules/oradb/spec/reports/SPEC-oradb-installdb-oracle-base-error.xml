@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="oradb::installdb oracle_base error" tests="1" time="0.102865" failures="0" errors="0" skipped="0" timestamp="2017-07-09T20:13:05+02:00">
-  <testcase name="oradb::installdb oracle_base error should raise Puppet::Error with message matching /expects a String value, got Undef/" time="0.102498">
-  </testcase>
-</testsuite>
